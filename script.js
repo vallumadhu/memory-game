@@ -75,8 +75,8 @@ let selected = []
 let IsGameOn = false
 let isFlipping = false // this is done to fix a bug I found while testing
 function game() {
+    dataSet.sort(() => 0.5 - Math.random())
     for (let i = 0; i < dataSet.length; i++) {
-        dataSet.sort(() => 0.5 - Math.random())
         // adding cards to HTML DOCUMENT 
 
         let card = document.createElement("div")
