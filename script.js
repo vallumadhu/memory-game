@@ -68,8 +68,6 @@ let dataSet = [
     }
 ]
 
-dataSet.sort(() => 0.5 - Math.random())
-
 let cardsMatched = 0
 let chosenCardid = []
 let selected = []
@@ -78,7 +76,7 @@ let IsGameOn = false
 let isFlipping = false // this is done to fix a bug I found while testing
 function game() {
     for (let i = 0; i < dataSet.length; i++) {
-
+        dataSet.sort(() => 0.5 - Math.random())
         // adding cards to HTML DOCUMENT 
 
         let card = document.createElement("div")
